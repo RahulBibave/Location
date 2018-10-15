@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corner_edittext">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Location Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Current Location"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_edittext">
+                <TextView
+                    android:id="@+id/txtCurrentLoc"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Your Location"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Destination Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner_edittext">
+                <TextView
+                    android:id="@+id/txtDestination"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:hint="Destination Location"
+                    />
+            </LinearLayout>
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/start"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="START"
+            android:layout_width="150dp"
+            android:background="#d26c6c"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
